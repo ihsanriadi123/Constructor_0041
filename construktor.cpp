@@ -14,5 +14,27 @@ class mahasiswa {
         mahasiswa(int iNim) {
             nim = iNim;
         };
-        
+        mahasiswa(string);
+        mahasiswa(int iNim, string iNama);
+        void cetak();
+};
+
+mahasiswa::mahasiswa(string iNama) {
+    nama = iNama;
+}
+
+mahasiswa::mahasiswa(int iNim, string iNama) {
+    nim = iNim;
+    nama = iNama;
+};
+
+void mahasiswa::cetak() {
+    cout << "nim = " << nim << endl;
+    cout << "nama = " << nama << endl;
+    cout << endl;
+}
+
+
+int main() {
+
 }
