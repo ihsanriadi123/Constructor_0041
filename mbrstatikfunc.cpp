@@ -18,5 +18,35 @@ class mahasiswa {
         mahasiswa(string pnama):nama(pnama) {
             setid();
         }
-        
+};
+
+int mahasiswa::nim = 100;
+
+void mahasiswa::setid() {
+    id = ++nim;
+}
+
+void mahasiswa::printall() {
+    cout << "id = " << id << endl;
+    cout << "nama = " << nama << endl;
+    cout << endl;
+}
+
+int main() {
+    mahasiswa mhs1("Sri dadi");
+    mahasiswa mhs2.("Budi Jatmiko");
+
+    mahasiswa::setnim(9);
+    mahasiswa mhs3("Andi Janu");
+    mahasiswa mhs4("Joko Wahono");
+
+    mhs1.printall();
+
+    mhs2.printall();
+    mhs3.printall();
+    mhs4.printall();
+
+    cout << "akses dari luar object = " << mahasiswa::getnim() <<endl;
+
+    return 0;
 }
