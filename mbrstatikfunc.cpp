@@ -14,6 +14,9 @@ class mahasiswa {
 
         static void setnim(int pNim) {nim = pNim;}
         static int getnim() { return nim; }
-        
 
+        mahasiswa(string pnama):nama(pnama) {
+            setid();
+        }
+        
 }
