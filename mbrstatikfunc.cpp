@@ -8,6 +8,12 @@ class mahasiswa {
     public:
         int id;
         string nama;
+
+        void setid();
+        void printall();
+
+        static void setnim(int pNim) {nim = pNim;}
+        static int getnim() { return nim; }
         
 
 }
